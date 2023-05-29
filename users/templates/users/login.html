@@ -1,0 +1,24 @@
+{% extends "gym/index.html" %}
+{% block title %}{% endblock %}
+{% block content %}
+    <h1 class="register-title">Вход в аккаунт</h1>
+    <form action="/" method="POST" class="register-form">
+    {% csrf_token %}
+    {% for f in form %}
+            <label class="form-label" for="{{ f.id_for_label }}">
+                {{f.label}}:
+            </label>
+        {{ f }}
+        <div class="form-error">
+            {{ f.errors }}
+        </div>
+    {% endfor %}
+        <br>
+        <button type="submit" class="gradient-button-register">Войти</button>
+        <br>
+        <small class="small-register">
+            Нет аккаунта? <a href="{% url 'register' %}">Зарегистрироваться</a>
+        </small>
+    </form>
+    <br>
+{% endblock %}
