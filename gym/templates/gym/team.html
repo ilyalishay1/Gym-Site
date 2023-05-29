@@ -1,0 +1,53 @@
+{% extends 'gym/index.html' %}
+{% load static %}
+{% block title %}Наша Команда{% endblock %}
+{% block content %}
+<br>
+<h2 class="team-h2">Команда</h2>
+<h2 class="team-main-h2">Тренеры и инструкторы DiamondGym</h2>
+<p class="team-p">Мы – команда профессионалов фитнеса. Преподаватели учебного центра “Фитнес-образование” и аттестованные специалисты,
+    которые прошли все необходимые стадии обучения и владеют нужными навыками.
+</p>
+<br>
+<p class="team-p-bold">Более 96% клиентов, которые пришли на первую тренировку,
+    остаются заниматься у тренера на постоянной основе.
+</p>
+<br>
+<br>
+<h1 class="team-h1">ТРЕНЕРЫ ТРЕНАЖЕРНОГО ЗАЛА</h1>
+<hr class="team-hr">
+<table>
+    <tr>
+        <td>
+            <p><img src="{% static 'gym/image/anton.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Антон Бутор</h3>
+        </td>
+        <td>
+            <p><img src="{% static 'gym/image/leonid.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Леонид Корбут</h3>
+        </td>
+        <td>
+            <p><img src="{% static 'gym/image/tatsiana.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Татьяна Мазынская</h3>
+        </td>
+        <td>
+            <p><img src="{% static 'gym/image/dmitriy.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Дмитрий Гайдукевич</h3>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p><img src="{% static 'gym/image/ekaterina.jpg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Екатерина Каценко</h3>
+        </td>
+        <td>
+            <p><img src="{% static 'gym/image/maksim.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Максим Мазынский</h3>
+        </td>
+        <td>
+            <p><img src="{% static 'gym/image/artur.jpeg' %}" class="trainer-image"></p>
+            <h3 class="trainer-name">Артур Касперович</h3>
+        </td>
+    </tr>
+</table>
+{% endblock %}

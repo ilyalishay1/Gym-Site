@@ -1,0 +1,231 @@
+{% extends 'gym/index.html' %}
+{% load static %}
+{% block title %}Услуги{% endblock %}
+{% block content %}
+<br>
+<h2 class="team-h2">Услуги</h2>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-07 13.08.18.jpeg' %}"></p>
+        </td>
+        <td>
+            <h2 class="about-h2">Тренажерный зал</h2>
+            <br>
+            <ul class="about-ul">
+                <li class="about-li">Просторный тренажерный зал 500 кв.м.</li>
+                <li class="about-li">Тренажеры Sports Art</li>
+                <li class="about-li">Кардио-зона: беговые дорожки, эллипсоиды, велотренажер,<br> степпер</li>
+                <li class="about-li">Время работы: будни с 8.00 до 23.00, выходные с 9.00<br> до 22.00</li>
+                <li class="about-li">Дополнительный инвентарь в открытом доступе: рукояти,<br>
+                    пояса, лямки, утяжелители, валики, степы, коврики,<br>
+                    бодибары, balance board, bosu, fitball, роллы для МФР, петли<br>
+                    TRX, фитнес-резинки
+                </li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<section class="color-table-serv">
+    <br>
+    <table>
+        <tr>
+            <td>
+                <h1 class="serv-h1">Клубная карта - oт 45 руб/мес </h1>
+            </td>
+            <td>
+                <button type="button" onclick="document.location={% url 'price' %}" id="btn-serv" class="btn btn-primary">Подробнее</button>
+            </td>
+        </tr>
+    </table>
+</section>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <h2 class="serv-h2">Индивидуальные тренировки</h2>
+            <button type="button" onclick="document.location={% url 'team' %}" id="btn-serv-left" class="btn btn-primary">Тренерский состав</button>
+            <p class="serv-p">Тренерский состав нашего клуба – это топовые специалисты,<br>
+                которые сертифицируются учебным центром «Фитнес<br>
+                образование». Персональный тренер в тренажерном зале<br>
+                поможет вам быстро и эффективно достигнуть желаемых<br>
+                результатов, улучшить здоровье и самочувствие.</p>
+        </td>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-29 13.54.01.jpeg' %}"></p>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-29 13.54.06.jpeg' %}"></p>
+        </td>
+        <td>
+            <h2 class="serv-h2-right">Помощь при<br> самостоятельных
+                <br>
+                тренировках
+            </h2>
+            <br>
+            <p class="serv-p-right">Если у вас возникают вопросы во время тренировочного<br>
+                процесса, а персональные тренировки вам не подходят –<br>
+                надевайте желтый браслет и дежурный тренер будет видеть, что<br>
+                вам нужна помощь:
+            </p>
+            <ul class="serv-ul">
+                <li class="serv-li">познакомит с залом: где что находится, какие есть зоны</li>
+                <li class="serv-li">подберет дополнительное оборудование</li>
+                <li class="serv-li">настроит тренажер</li>
+                <li class="serv-li">даст рекомендации по технике выполнения упражнения</li>
+                <li class="serv-li">подстрахует в выполнении «тяжелого» упражнения</li>
+                <li class="serv-li">ответит на вопросы, касаемо тренировочного процесса</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<section class="color-table-serv">
+    <br>
+    <table>
+        <tr>
+            <td>
+                <h1 class="serv-h1">Детская клубная карта</h1>
+            </td>
+            <td>
+                <button type="button" onclick="document.location={% url 'price' %}" id="btn-serv-2" class="btn btn-primary">Подробнее</button>
+            </td>
+        </tr>
+    </table>
+</section>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <h2 class="serv-h2">Персональные тренировки<br> с детьми</h2>
+            <br>
+            <p class="serv-p-bold">Вашему ребенку нужны персональные тренировки, чтобы:</p>
+            <ul class="serv-ul">
+                <li class="serv-li">развить физические качества, необходимые для повышения<br>
+                    показателей в каком-либо виде спорта
+                </li>
+                <li class="serv-li">исправить осанку, плоскостопие, неправильные<br>
+                    двигательные навыки
+                </li>
+                <li class="serv-li">изучить спортивные элементы</li>
+                <li class="serv-li">уменьшить лишний вес, набрать мышечную массу или<br>
+                    изменить пропорции тела (для подростков)
+                </li>
+                <li class="serv-li">улучшить физические способности, повысить общий уровень<br>
+                    активности и здоровья.
+                </li>
+            </ul>
+        </td>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-29 13.54.04.jpeg' %}"></p>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-14 11.31.57.jpeg' %}"></p>
+        </td>
+        <td>
+            <h2 class="serv-h2-right">Финская сауна</h2>
+            <br>
+            <p class="serv-p-right">В фитнес-центре «Lifestyle» финская сауна находится как в<br> мужской, так и в
+                женской раздевалках и входит в стоимость<br>
+                вашего посещения. </p>
+            <p class="serv-p-right">Предназначена для прогрева тела и расслабления мышц<br>
+                после физических нагрузок.</p>
+            <p class="serv-p-right">Полезной для здоровья финскую сауну делает оптимальное<br>
+                соотношение влажности и температуры. Температура в финской<br>
+                сауне может быть очень высокой – до 90°C, зато влажность<br>
+                гораздо ниже – всего около 15%.</p>
+            <br>
+            <section class="sauna">
+                <br>
+                <h4 class="sauna-h4">Режим работы:</h4>
+                <p class="sauna-p">
+                    Будни: 8:00 - 23:00<br>
+                    Выходные: 9:00 - 22:00
+                </p>
+            </section>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <h2 class="serv-h2">Спортивное питание</h2>
+            <br>
+            <p class="serv-p">В нашем зале вы сможете
+            приобрести нужное вам спортивное<br>
+                питание по низким ценам.
+            </p>
+            <button type="button" onclick="document.location={% url 'suplements' %}" id="btn-serv-left-2" class="btn btn-primary">Подробнее</button>
+        </td>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/photo_2023-05-29 13.54.08.jpeg' %}"></p>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<table>
+    <tr>
+        <td>
+            <p><img class="about-us-img" src="{% static 'gym/image/Unknown-6.jpeg' %}"></p>
+        </td>
+        <td>
+            <h2 class="serv-h2-right">Массаж</h2>
+            <br>
+            <p class="serv-p-right">Для чего нужен массаж?</p>
+            <ul class="serv-ul">
+                <li class="serv-li">Укрепляет иммунитет, спасает от головной боли,<br>
+                    лечит опорно-двигательную систему
+                </li>
+                <li class="serv-li">Возвращает бодрость, снимает усталость</li>
+                <li class="serv-li">Помогает бороться с избыточным весом</li>
+                <li class="serv-li">Стимулирует работу мозга, помогает<br>
+                    генерировать новые идеи
+                </li>
+                <li class="serv-li">Снимает стресс, поднимает настроение</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<br>
+<br>
+<section class="color-table-serv">
+    <br>
+    <table>
+        <tr>
+            <td>
+                <h1 class="serv-h1">Тарифы на массаж</h1>
+            </td>
+            <td>
+                <a class="w-100 btn btn-lg btn-primary" id="btn-serv-3" href="{% static 'gym/image/pricem.jpeg' %}" download>Скачать</a>
+            </td>
+        </tr>
+    </table>
+</section>
+{% endblock %}

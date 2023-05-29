@@ -1,0 +1,79 @@
+{% extends 'gym/index.html' %}
+{% load static %}
+{% block title %}Тарифы{% endblock %}
+{% block content %}
+<br>
+<h2 class="team-h2">Тарифы</h2>
+<br>
+<h5 class="price-h5">Вы можете заниматься по подписке, клубной карте или разово</h5>
+<section class="color-table">
+    <table>
+        <tr>
+            <td>
+                <p class="price-p">Первая тренировка с тренером - <p class="price-p-bold">БЕСПЛАТНО</p>
+            </td>
+            <td>
+                <p class="price-sale">Скидки для школьников, студентов, пенсионеров</p>
+            </td>
+        </tr>
+    </table>
+</section>
+<br>
+<br>
+<br>
+<div class="container py-3">
+  <main>
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Тренировки без тренера</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">От 45р<small class="text-body-secondary fw-light"></small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Посещение с 8:00 - 16:00</li>
+              <li>Посещение в любое время</li>
+              <li>Детская комната</li>
+              <li>Посещение сауны</li>
+            </ul>
+            <a class="w-100 btn btn-lg btn-primary" href="{% static 'gym/image/price.jpeg' %}" download>Скачать файл с тарифами</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Групповые тренировки</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">От 24р<small class="text-body-secondary fw-light">/1 занятие</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Посещение в любое время</li>
+              <li>Детская комната</li>
+              <li>Посещение сауны</li>
+              <li>Тренировки с ТРЕНЕРОМ</li>
+            </ul>
+            <a class="w-100 btn btn-lg btn-primary" href="{% static 'gym/image/price.jpeg' %}" download>Скачать файл с тарифами</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">Индивидуальные тренировки</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">От 29р<small class="text-body-secondary fw-light">/1 занятие</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Посещение в любое время</li>
+              <li>Детская комната</li>
+              <li>Посещение сауны</li>
+              <li>Индивидуальные тренировки с ТРЕНЕРОМ</li>
+            </ul>
+            <a class="w-100 btn btn-lg btn-primary" href="{% static 'gym/image/price.jpeg' %}" download>Скачать файл с тарифами</a>
+          </div>
+        </div>
+      </div>
+</div>
+{% endblock %}
