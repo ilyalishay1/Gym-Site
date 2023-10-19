@@ -1,2 +1,2 @@
 # Gym-Site
-Site for Diamond Gym.
+Site for Diamond Gym
